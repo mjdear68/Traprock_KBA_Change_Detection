@@ -6,8 +6,8 @@ vector_dir = '../data/vector/'
 geotiff_dir = '../data/geoTIFF/'
 climate_dir = '../data/climate/BoM/'
 
-area_unit = '900m^2'
-area_unit_val = 30**2
+area_unit = 'ha'
+area_unit_val = 10**4
 
 spatial_res = 30 # Spatial resolution of the raster dataset in metres
 crs = 3577
