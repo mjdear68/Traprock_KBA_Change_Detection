@@ -10,11 +10,12 @@ Landsat 8 satellite data was obtained from Digital Earth Australia's Open Data C
 1. Clone the repository to the [Digital Earth Australia (DEA) Sandbox](https://app.sandbox.dea.ga.gov.au/hub/login?next=%2Fhub%2F)
 2. (Recommended) Clone the repository locally to perfom the analysis steps.
 3. Delete unwanted files from the data sub-directories.
-4. Update relevant parameters in the [global_prameters.py](./nbk/global_params.py) file.
+4. Update relevant parameters in the [global_params.py](./nbk/global_params.py) file.
 5. Save a `.geojson` polygon of the study area to the `data/vector ` directory. The filename should be `[study_area_abbrev].geojson` where `study_area_abbrev` matches the parameter in the `nbk/global_params.py` file.
-6. Complete all relevant steps in the [DEA Data Preparation](./nbk/dea_data_prep.ipynb) notebook. Some steps are optional, depending on the objectives of the study.
-7. Complete the steps in the [Exploratory Data Analysis](./nbk/eda.ipynb) notebook and review the potential change classes for the study site.
-8. Complete relevant steps in the [Class Data Preparation](./nbk/class_data_prep.ipynb) notebook to create any necessary classification variables.
-9. Complete the [Post-classification Analysis](./nbk/post_class_analysis.ipynb) notebook.
+6. Obtain monthly rainfall, mean maximum temperature, and mean minimum temperature data for a waether station close to the study site from the [Bureau of Meterology](http://www.bom.gov.au/climate/data/) in csv format. Extract the `_Data1.csv` files from the downloaded archives and copy the them to the climate directory indicated in the [global_params.py](./nbk/global_params.py) file. Use the names `rainfall.csv`, `temp_mean_max.csv`, and `temp_mean_min.csv`.
+7. Complete all relevant steps in the [DEA Data Preparation](./nbk/dea_data_prep.ipynb) notebook. Some steps are optional, depending on the objectives of the study.
+8. Complete the steps in the [Exploratory Data Analysis](./nbk/eda.ipynb) notebook and review the potential change classes for the study site.
+9. Complete relevant steps in the [Class Data Preparation](./nbk/class_data_prep.ipynb) notebook to create any necessary classification variables.
+10. Complete the [Post-classification Analysis](./nbk/post_class_analysis.ipynb) notebook.
 
 
