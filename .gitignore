@@ -1,5 +1,6 @@
 # MDear
 *.aux.xml
+*.nc # file size too large at 30m resolution
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
