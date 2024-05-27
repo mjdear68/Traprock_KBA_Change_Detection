@@ -14,3 +14,6 @@ crs = 3577
 
 # Study area abbreviation for exports etc
 study_area_abbrev = 'Traprock'
+
+# Class labels
+cl_labels = ['Bare', 'Grass', 'Medium Wooded', 'Dense Wooded']
